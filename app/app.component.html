@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <button type="button" (click)="increment()">Increment</button>
+  <button type="button" (click)="decrement()">Decrement</button>
+  <input type="text" name="count" [value]="counterService.count" style="width: 450px; text-align: center;">
+  <br>
+  <label>Last Transaction ID</label>
+  <input type="text" name="transaction" [value]="counterService.lastTransactionID" style="width: 500px;  text-align: center;">
+</div>
